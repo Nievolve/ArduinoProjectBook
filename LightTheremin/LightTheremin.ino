@@ -27,7 +27,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   sensorValue = analogRead(A0);
 
-  int pitch = map(sensorValue, sensorLow, sensorHigh, 50, 4000);
+  int pitch = map(sensorValue, sensorLow, sensorHigh, 100, 400);
   tone (8,pitch,20);
   delay(10);
 }
