@@ -23,5 +23,5 @@ void loop() {
     digitalWrite(pinToLight, HIGH);
   }
 
-  delay(500);
+  delay(50);
 }
