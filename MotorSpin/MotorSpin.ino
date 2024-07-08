@@ -4,7 +4,7 @@ int switchState = 0;
 
 void setup() {
   pinMode(switchPin, INPUT);
-  pinMode(moterPin, OUTPUT);
+  pinMode(motorPin, OUTPUT);
   
 
 }
@@ -14,9 +14,8 @@ void loop() {
 
   if(switchState == HIGH){
     digitalWrite(motorPin, HIGH);
+  }
   else {
     digitalWrite(motorPin, LOW);
   }
   }
-
-}
