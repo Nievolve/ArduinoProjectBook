@@ -1,0 +1,7 @@
+This is a debate timer project. Akind to a chessclock.
+
+## Remeber
+Use this var so after program starts and millis ticks when StartButton is pressed (green button)
+this goes minus current time. So if program starts and we wait 3 seconds to press green button.
+then (Millis) is 3000 and this var is 3000. So either it subtracts 3000 directly or after stopButton
+is pressed
