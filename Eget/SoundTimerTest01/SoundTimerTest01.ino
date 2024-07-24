@@ -17,12 +17,29 @@ void setup() {
 }
 
 void loop() {
-  if (digitalReadzpersonOne) == HIGH) {
+
+  int person1Button = digitalRead(personOne);
+  int person2Button = digitalRead(personTwo);
+  int person3Button = digitalRead(personThree);
+
+  if (person1Button == HIGH){
+    whoIsIt = 1;
+  }
+  else if(person2Button == HIGH){
+    whoIsIt = 2;
+  }
+  else if(person3Button == HIGH ){
+    whoIsIt = 0;
+  }
+
+  if (whoIsIt == 1){
     message = "Person One";
   }
-  
-   else {
-    message = "DEFAULT1";
+  else if (whoIsIt == 2){
+    message = "Person Two";
+  }
+  else if (whoIsIt == 0){
+    message = "Neutral";
   }
   Serial.println(message);
 }
